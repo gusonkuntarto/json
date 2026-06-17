@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "ORD-9001",
+    "transaction_date": "2026-06-15T10:20:00Z",
+    "amount": 1500.00,
+    "customer": {
+      "customer_id": "CUST-101",
+      "name": "Alice Wijaya",
+      "email": "alice@email.com"
+    },
+    "device": {
+      "device_id": "DEV-IPHONE15",
+      "ip_address": "192.168.1.50"
+    },
+    "items": [
+      { "product_id": "PROD-A", "category": "Electronics", "price": 1200.00 },
+      { "product_id": "PROD-B", "category": "Accessories", "price": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9002",
+    "transaction_date": "2026-06-16T11:45:00Z",
+    "amount": 300.00,
+    "customer": {
+      "customer_id": "CUST-102",
+      "name": "Bob Budiman",
+      "email": "bob@email.com"
+    },
+    "device": {
+      "device_id": "DEV-IPHONE15",
+      "ip_address": "192.168.1.75"
+    },
+    "items": [
+      { "product_id": "PROD-B", "category": "Accessories", "price": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9003",
+    "transaction_date": "2026-06-17T09:15:00Z",
+    "amount": 450.00,
+    "customer": {
+      "customer_id": "CUST-103",
+      "name": "Charlie Sitorus",
+      "email": "charlie@email.com"
+    },
+    "device": {
+      "device_id": "DEV-LAPTOP04",
+      "ip_address": "172.16.4.12"
+    },
+    "items": [
+      { "product_id": "PROD-A", "category": "Electronics", "price": 1200.00 }
+    ]
+  }
+]
