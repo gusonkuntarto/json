@@ -1,54 +1,667 @@
 [
   {
     "_id": "ORD-9001",
-    "transaction_date": "2026-06-15T10:20:00Z",
-    "amount": 1500.00,
-    "customer": {
-      "customer_id": "CUST-101",
-      "name": "Alice Wijaya",
-      "email": "alice@email.com"
-    },
-    "device": {
-      "device_id": "DEV-IPHONE15",
-      "ip_address": "192.168.1.50"
-    },
+    "TRANSACTION_DATE": "2026-06-15T10:20:00Z",
+    "AMOUNT": 1500.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-101",
+    "CUSTOMER__NAME": "Alice Wijaya",
+    "CUSTOMER__EMAIL": "alice@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.50",
     "items": [
-      { "product_id": "PROD-A", "category": "Electronics", "price": 1200.00 },
-      { "product_id": "PROD-B", "category": "Accessories", "price": 300.00 }
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
     ]
   },
   {
     "_id": "ORD-9002",
-    "transaction_date": "2026-06-16T11:45:00Z",
-    "amount": 300.00,
-    "customer": {
-      "customer_id": "CUST-102",
-      "name": "Bob Budiman",
-      "email": "bob@email.com"
-    },
-    "device": {
-      "device_id": "DEV-IPHONE15",
-      "ip_address": "192.168.1.75"
-    },
+    "TRANSACTION_DATE": "2026-06-16T11:45:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-102",
+    "CUSTOMER__NAME": "Bob Budiman",
+    "CUSTOMER__EMAIL": "bob@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.75",
     "items": [
-      { "product_id": "PROD-B", "category": "Accessories", "price": 300.00 }
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
     ]
   },
   {
     "_id": "ORD-9003",
-    "transaction_date": "2026-06-17T09:15:00Z",
-    "amount": 450.00,
-    "customer": {
-      "customer_id": "CUST-103",
-      "name": "Charlie Sitorus",
-      "email": "charlie@email.com"
-    },
-    "device": {
-      "device_id": "DEV-LAPTOP04",
-      "ip_address": "172.16.4.12"
-    },
+    "TRANSACTION_DATE": "2026-06-17T09:15:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-103",
+    "CUSTOMER__NAME": "Charlie Sitorus",
+    "CUSTOMER__EMAIL": "charlie@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP04",
+    "DEVICE__IP_ADDRESS": "172.16.4.12",
     "items": [
-      { "product_id": "PROD-A", "category": "Electronics", "price": 1200.00 }
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9004",
+    "TRANSACTION_DATE": "2026-06-17T13:00:00Z",
+    "AMOUNT": 150.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-101",
+    "CUSTOMER__NAME": "Alice Wijaya",
+    "CUSTOMER__EMAIL": "alice@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.50",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9005",
+    "TRANSACTION_DATE": "2026-06-18T14:20:00Z",
+    "AMOUNT": 2200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-104",
+    "CUSTOMER__NAME": "Dewi Lestari",
+    "CUSTOMER__EMAIL": "dewi@email.com",
+    "DEVICE__DEVICE_ID": "DEV-MACBOOK01",
+    "DEVICE__IP_ADDRESS": "192.168.1.80",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-D", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 2000.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9006",
+    "TRANSACTION_DATE": "2026-06-18T15:00:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-105",
+    "CUSTOMER__NAME": "Eko Prasetyo",
+    "CUSTOMER__EMAIL": "eko@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG23",
+    "DEVICE__IP_ADDRESS": "10.0.0.5",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9007",
+    "TRANSACTION_DATE": "2026-06-19T08:30:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-102",
+    "CUSTOMER__NAME": "Bob Budiman",
+    "CUSTOMER__EMAIL": "bob@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.75",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9008",
+    "TRANSACTION_DATE": "2026-06-19T10:45:00Z",
+    "AMOUNT": 450.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-106",
+    "CUSTOMER__NAME": "Fitriani",
+    "CUSTOMER__EMAIL": "fitri@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG23",
+    "DEVICE__IP_ADDRESS": "10.0.0.6",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9009",
+    "TRANSACTION_DATE": "2026-06-20T11:00:00Z",
+    "AMOUNT": 2000.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-107",
+    "CUSTOMER__NAME": "Gilang",
+    "CUSTOMER__EMAIL": "gilang@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP05",
+    "DEVICE__IP_ADDRESS": "172.16.4.15",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-D", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 2000.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9010",
+    "TRANSACTION_DATE": "2026-06-20T16:15:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-108",
+    "CUSTOMER__NAME": "Hendra",
+    "CUSTOMER__EMAIL": "hendra@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE13",
+    "DEVICE__IP_ADDRESS": "192.168.1.90",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9011",
+    "TRANSACTION_DATE": "2026-06-21T09:00:00Z",
+    "AMOUNT": 1350.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-109",
+    "CUSTOMER__NAME": "Indah",
+    "CUSTOMER__EMAIL": "indah@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP01",
+    "DEVICE__IP_ADDRESS": "172.16.4.20",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9012",
+    "TRANSACTION_DATE": "2026-06-21T14:30:00Z",
+    "AMOUNT": 150.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-110",
+    "CUSTOMER__NAME": "Joko",
+    "CUSTOMER__EMAIL": "joko@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG21",
+    "DEVICE__IP_ADDRESS": "10.0.0.12",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9013",
+    "TRANSACTION_DATE": "2026-06-22T10:00:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-101",
+    "CUSTOMER__NAME": "Alice Wijaya",
+    "CUSTOMER__EMAIL": "alice@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP04",
+    "DEVICE__IP_ADDRESS": "172.16.4.12",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9014",
+    "TRANSACTION_DATE": "2026-06-22T12:00:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-111",
+    "CUSTOMER__NAME": "Kartika",
+    "CUSTOMER__EMAIL": "kartika@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE14",
+    "DEVICE__IP_ADDRESS": "192.168.1.55",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9015",
+    "TRANSACTION_DATE": "2026-06-23T15:45:00Z",
+    "AMOUNT": 2350.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-112",
+    "CUSTOMER__NAME": "Lukman",
+    "CUSTOMER__EMAIL": "lukman@email.com",
+    "DEVICE__DEVICE_ID": "DEV-MACBOOK02",
+    "DEVICE__IP_ADDRESS": "192.168.1.81",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-D", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 2000.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9016",
+    "TRANSACTION_DATE": "2026-06-23T17:00:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-103",
+    "CUSTOMER__NAME": "Charlie Sitorus",
+    "CUSTOMER__EMAIL": "charlie@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP04",
+    "DEVICE__IP_ADDRESS": "172.16.4.12",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9017",
+    "TRANSACTION_DATE": "2026-06-24T09:30:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-113",
+    "CUSTOMER__NAME": "Mega",
+    "CUSTOMER__EMAIL": "mega@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.77",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9018",
+    "TRANSACTION_DATE": "2026-06-24T11:15:00Z",
+    "AMOUNT": 450.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-114",
+    "CUSTOMER__NAME": "Nugroho",
+    "CUSTOMER__EMAIL": "nugroho@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG24",
+    "DEVICE__IP_ADDRESS": "10.0.0.25",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9019",
+    "TRANSACTION_DATE": "2026-06-25T13:20:00Z",
+    "AMOUNT": 1500.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-115",
+    "CUSTOMER__NAME": "Olivia",
+    "CUSTOMER__EMAIL": "olivia@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP09",
+    "DEVICE__IP_ADDRESS": "172.16.4.40",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9020",
+    "TRANSACTION_DATE": "2026-06-25T14:00:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-105",
+    "CUSTOMER__NAME": "Eko Prasetyo",
+    "CUSTOMER__EMAIL": "eko@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG23",
+    "DEVICE__IP_ADDRESS": "10.0.0.5",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9021",
+    "TRANSACTION_DATE": "2026-06-26T10:10:00Z",
+    "AMOUNT": 2000.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-116",
+    "CUSTOMER__NAME": "Pratama",
+    "CUSTOMER__EMAIL": "pratama@email.com",
+    "DEVICE__DEVICE_ID": "DEV-MACBOOK03",
+    "DEVICE__IP_ADDRESS": "192.168.1.85",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-D", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 2000.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9022",
+    "TRANSACTION_DATE": "2026-06-26T16:40:00Z",
+    "AMOUNT": 150.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-117",
+    "CUSTOMER__NAME": "Qori",
+    "CUSTOMER__EMAIL": "qori@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE12",
+    "DEVICE__IP_ADDRESS": "192.168.1.95",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9023",
+    "TRANSACTION_DATE": "2026-06-27T08:45:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-118",
+    "CUSTOMER__NAME": "Rian",
+    "CUSTOMER__EMAIL": "rian@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP11",
+    "DEVICE__IP_ADDRESS": "172.16.4.50",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9024",
+    "TRANSACTION_DATE": "2026-06-27T11:30:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-119",
+    "CUSTOMER__NAME": "Siti",
+    "CUSTOMER__EMAIL": "siti@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG22",
+    "DEVICE__IP_ADDRESS": "10.0.0.18",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9025",
+    "TRANSACTION_DATE": "2026-06-28T12:15:00Z",
+    "AMOUNT": 1500.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-120",
+    "CUSTOMER__NAME": "Taufik",
+    "CUSTOMER__EMAIL": "taufik@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.51",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9026",
+    "TRANSACTION_DATE": "2026-06-28T15:00:00Z",
+    "AMOUNT": 150.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-101",
+    "CUSTOMER__NAME": "Alice Wijaya",
+    "CUSTOMER__EMAIL": "alice@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.50",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9027",
+    "TRANSACTION_DATE": "2026-06-29T09:20:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-121",
+    "CUSTOMER__NAME": "Utami",
+    "CUSTOMER__EMAIL": "utami@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP12",
+    "DEVICE__IP_ADDRESS": "172.16.4.55",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9028",
+    "TRANSACTION_DATE": "2026-06-29T14:10:00Z",
+    "AMOUNT": 450.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-122",
+    "CUSTOMER__NAME": "Vino",
+    "CUSTOMER__EMAIL": "vino@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE14",
+    "DEVICE__IP_ADDRESS": "192.168.1.58",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9029",
+    "TRANSACTION_DATE": "2026-06-30T10:30:00Z",
+    "AMOUNT": 2000.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-123",
+    "CUSTOMER__NAME": "Wanda",
+    "CUSTOMER__EMAIL": "wanda@email.com",
+    "DEVICE__DEVICE_ID": "DEV-MACBOOK05",
+    "DEVICE__IP_ADDRESS": "192.168.1.88",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-D", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 2000.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9030",
+    "TRANSACTION_DATE": "2026-06-30T13:00:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-102",
+    "CUSTOMER__NAME": "Bob Budiman",
+    "CUSTOMER__EMAIL": "bob@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.75",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9031",
+    "TRANSACTION_DATE": "2026-07-01T09:00:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-124",
+    "CUSTOMER__NAME": "Xavier",
+    "CUSTOMER__EMAIL": "xavier@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP15",
+    "DEVICE__IP_ADDRESS": "172.16.4.60",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9032",
+    "TRANSACTION_DATE": "2026-07-01T11:45:00Z",
+    "AMOUNT": 150.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-125",
+    "CUSTOMER__NAME": "Yanti",
+    "CUSTOMER__EMAIL": "yanti@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG20",
+    "DEVICE__IP_ADDRESS": "10.0.0.30",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9033",
+    "TRANSACTION_DATE": "2026-07-02T14:20:00Z",
+    "AMOUNT": 1500.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-126",
+    "CUSTOMER__NAME": "Zaki",
+    "CUSTOMER__EMAIL": "zaki@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.52",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9034",
+    "TRANSACTION_DATE": "2026-07-02T16:00:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-104",
+    "CUSTOMER__NAME": "Dewi Lestari",
+    "CUSTOMER__EMAIL": "dewi@email.com",
+    "DEVICE__DEVICE_ID": "DEV-MACBOOK01",
+    "DEVICE__IP_ADDRESS": "192.168.1.80",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9035",
+    "TRANSACTION_DATE": "2026-07-03T10:15:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-103",
+    "CUSTOMER__NAME": "Charlie Sitorus",
+    "CUSTOMER__EMAIL": "charlie@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP04",
+    "DEVICE__IP_ADDRESS": "172.16.4.12",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9036",
+    "TRANSACTION_DATE": "2026-07-03T11:30:00Z",
+    "AMOUNT": 450.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-106",
+    "CUSTOMER__NAME": "Fitriani",
+    "CUSTOMER__EMAIL": "fitri@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG23",
+    "DEVICE__IP_ADDRESS": "10.0.0.6",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9037",
+    "TRANSACTION_DATE": "2026-07-04T13:00:00Z",
+    "AMOUNT": 2000.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-107",
+    "CUSTOMER__NAME": "Gilang",
+    "CUSTOMER__EMAIL": "gilang@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP05",
+    "DEVICE__IP_ADDRESS": "172.16.4.15",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-D", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 2000.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9038",
+    "TRANSACTION_DATE": "2026-07-04T15:30:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-109",
+    "CUSTOMER__NAME": "Indah",
+    "CUSTOMER__EMAIL": "indah@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP01",
+    "DEVICE__IP_ADDRESS": "172.16.4.20",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9039",
+    "TRANSACTION_DATE": "2026-07-05T09:45:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-111",
+    "CUSTOMER__NAME": "Kartika",
+    "CUSTOMER__EMAIL": "kartika@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE14",
+    "DEVICE__IP_ADDRESS": "192.168.1.55",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9040",
+    "TRANSACTION_DATE": "2026-07-05T10:00:00Z",
+    "AMOUNT": 150.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-112",
+    "CUSTOMER__NAME": "Lukman",
+    "CUSTOMER__EMAIL": "lukman@email.com",
+    "DEVICE__DEVICE_ID": "DEV-MACBOOK02",
+    "DEVICE__IP_ADDRESS": "192.168.1.81",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9041",
+    "TRANSACTION_DATE": "2026-07-06T11:20:00Z",
+    "AMOUNT": 1500.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-113",
+    "CUSTOMER__NAME": "Mega",
+    "CUSTOMER__EMAIL": "mega@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.77",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9042",
+    "TRANSACTION_DATE": "2026-07-06T14:15:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-114",
+    "CUSTOMER__NAME": "Nugroho",
+    "CUSTOMER__EMAIL": "nugroho@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG24",
+    "DEVICE__IP_ADDRESS": "10.0.0.25",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9043",
+    "TRANSACTION_DATE": "2026-07-07T08:30:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-115",
+    "CUSTOMER__NAME": "Olivia",
+    "CUSTOMER__EMAIL": "olivia@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP09",
+    "DEVICE__IP_ADDRESS": "172.16.4.40",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9044",
+    "TRANSACTION_DATE": "2026-07-07T16:00:00Z",
+    "AMOUNT": 450.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-116",
+    "CUSTOMER__NAME": "Pratama",
+    "CUSTOMER__EMAIL": "pratama@email.com",
+    "DEVICE__DEVICE_ID": "DEV-MACBOOK03",
+    "DEVICE__IP_ADDRESS": "192.168.1.85",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9045",
+    "TRANSACTION_DATE": "2026-07-08T10:45:00Z",
+    "AMOUNT": 2000.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-118",
+    "CUSTOMER__NAME": "Rian",
+    "CUSTOMER__EMAIL": "rian@email.com",
+    "DEVICE__DEVICE_ID": "DEV-LAPTOP11",
+    "DEVICE__IP_ADDRESS": "172.16.4.50",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-D", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 2000.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9046",
+    "TRANSACTION_DATE": "2026-07-08T13:20:00Z",
+    "AMOUNT": 300.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-119",
+    "CUSTOMER__NAME": "Siti",
+    "CUSTOMER__EMAIL": "siti@email.com",
+    "DEVICE__DEVICE_ID": "DEV-SAMSUNG22",
+    "DEVICE__IP_ADDRESS": "10.0.0.18",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9047",
+    "TRANSACTION_DATE": "2026-07-09T09:10:00Z",
+    "AMOUNT": 1350.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-120",
+    "CUSTOMER__NAME": "Taufik",
+    "CUSTOMER__EMAIL": "taufik@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.51",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9048",
+    "TRANSACTION_DATE": "2026-07-09T15:00:00Z",
+    "AMOUNT": 150.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-122",
+    "CUSTOMER__NAME": "Vino",
+    "CUSTOMER__EMAIL": "vino@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE14",
+    "DEVICE__IP_ADDRESS": "192.168.1.58",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9049",
+    "TRANSACTION_DATE": "2026-07-10T11:00:00Z",
+    "AMOUNT": 1200.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-123",
+    "CUSTOMER__NAME": "Wanda",
+    "CUSTOMER__EMAIL": "wanda@email.com",
+    "DEVICE__DEVICE_ID": "DEV-MACBOOK05",
+    "DEVICE__IP_ADDRESS": "192.168.1.88",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-A", "ITEMS__CATEGORY": "Electronics", "ITEMS__PRICE": 1200.00 }
+    ]
+  },
+  {
+    "_id": "ORD-9050",
+    "TRANSACTION_DATE": "2026-07-10T14:30:00Z",
+    "AMOUNT": 450.00,
+    "CUSTOMER__CUSTOMER_ID": "CUST-126",
+    "CUSTOMER__NAME": "Zaki",
+    "CUSTOMER__EMAIL": "zaki@email.com",
+    "DEVICE__DEVICE_ID": "DEV-IPHONE15",
+    "DEVICE__IP_ADDRESS": "192.168.1.52",
+    "items": [
+      { "ITEMS__PRODUCT_ID": "PROD-B", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 300.00 },
+      { "ITEMS__PRODUCT_ID": "PROD-C", "ITEMS__CATEGORY": "Accessories", "ITEMS__PRICE": 150.00 }
     ]
   }
 ]
